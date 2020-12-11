@@ -90,7 +90,6 @@ def validate_pid(passport):
 
 def validate(passport):
     validations = [validate_required,validate_byr,validate_iyr,validate_eyr,validate_hgt,validate_hcl,validate_ecl,validate_pid]
-
     def curry(param):
         def application(func):
             return func(param)
