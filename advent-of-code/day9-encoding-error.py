@@ -36,6 +36,19 @@ while True:
         index += 1
     else:
         invalid = current
-        print(index, current)
         break
 
+current_index = index
+print(current_index,index)
+
+data = list(map(lambda x: int(x), data))
+
+for window_size in range(2,len(data)):
+    for window_start in range(0,len(data)-window_size):
+        window_end = window_start + window_size
+        window = data[window_start:window_end]
+        window_sum = sum(window)
+        if current == window_sum:
+            print(window_start,window_end,window_size, window_sum)
+            print(window)
+            print(min(window)+max(window))
