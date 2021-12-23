@@ -5,25 +5,6 @@ const rawData = fs.readFileSync('data.txt', 'utf8')
     .toString()
     .split("\r\n");
 
-function polymerize(polymer, replacements){
-
-    const newPolymer = [];
-    for (let i = 0; i < polymer.length - 1; i++) {
-    
-        newPolymer.push(polymer[i]);
-    
-        const pair = polymer[i]+polymer[i+1];
-    
-        const replacement = replacements[pair];
-        if(replacement){
-            newPolymer.push(replacement);
-        }   
-    }
-    newPolymer.push(polymer[polymer.length -1]);
-
-    return newPolymer;
-}
-
 function getCharCounts(counts){
     
     let keys = Object.keys(counts);
