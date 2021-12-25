@@ -1,0 +1,16 @@
+{
+  "name": "day-15--chiton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solution-dijkstra.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "fastpriorityqueue": "^0.7.1",
+    "priorityqueuejs": "^2.0.0"
+  }
+}
