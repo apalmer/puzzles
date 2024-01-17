@@ -1,4 +1,4 @@
-import { TreeNode, parseTreeNode } from "../dataStructures/TreeNode";
+import { TreeNode, parseTreeNode } from "../_dataStructures/TreeNode";
 
 function solve(tree: TreeNode | null): number {
     let max = 0;

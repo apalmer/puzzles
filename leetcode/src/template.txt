@@ -1,0 +1,13 @@
+function solve(input: number) {
+    return input;
+}
+
+const ftestCases = [
+    [1, 1]
+];
+
+it.each(testCases)("test", (input, expected) => {
+    let actual = solve(input);
+
+    expect(actual).toBe(expected);
+})
