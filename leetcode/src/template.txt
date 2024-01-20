@@ -2,7 +2,7 @@ function solve(input: number) {
     return input;
 }
 
-const ftestCases = [
+const testCases = [
     [1, 1]
 ];
 
