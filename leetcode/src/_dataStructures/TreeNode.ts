@@ -49,3 +49,7 @@ export const parseTreeNode: (input: Array<number| null>) => TreeNode | null = (i
 
     return root;
 }
+
+export const serializeTreeNode: (input: TreeNode | null) => Array<number| null> = (input) => {
+    return []
+}
